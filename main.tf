@@ -192,4 +192,5 @@ resource "aws_cloudwatch_metric_alarm" "maximum_used_transaction_ids_too_high" {
   alarm_description   = "Nearing a possible critical transaction ID wraparound."
   alarm_actions       = var.actions_alarm
   ok_actions          = var.actions_ok
+  tags                = var.tags
 }
